@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>display <span id="display">0</span>px </h1>
+    <script>
+        let spanTag=document.getElementById('display');
+        window.addEventListener('resize',function()
+        {
+            let screensize=window.innerWidth;
+            spanTag.textContent=screensize;
+        })
+    </script>
+</body>
+</html>
